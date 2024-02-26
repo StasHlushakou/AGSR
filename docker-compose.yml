@@ -1,0 +1,32 @@
+version: '3.4'
+
+networks:
+  patientsNetwork:
+
+services:
+  appdb:
+    container_name: app-db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    networks:
+      - patientsNetwork
+    ports: 
+      - 8001:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=12qwasZX
+  patientsapi:
+    container_name: patients-api
+    image: ${DOCKER_REGISTRY-}patientsapi
+    build:
+      context: .
+      dockerfile: PatientsAPI/Dockerfile
+    depends_on:
+      - appdb  
+    networks:
+      - patientsNetwork 
+    ports: 
+      - 8002:80
+    environment:
+      - DB_HOST=appdb
+      - DB_NAME=patient
+      - DB_SA_PASSWORD=12qwasZX

@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "1c6331ee-fc3b-4673-80f7-13d3b4c304f1",
+		"name": "PatientsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33190205"
+	},
+	"item": [
+		{
+			"name": "Test search by birthDate",
+			"item": [
+				{
+					"name": "GetWithFilterByBirthDate eq",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=eq2013-11-25T05:05:05Z",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "eq2013-11-25T05:05:05Z"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetWithFilterByBirthDate ne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=ne2013-01-16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "ne2013-01-16"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetWithFilterByBirthDate lt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=lt2013-11-25T05:25:43%2b05:30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "lt2013-11-25T05:25:43%2b05:30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetWithFilterByBirthDate gt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=eq2013-11-25T05:25:43-05:30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "eq2013-11-25T05:25:43-05:30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetWithFilterByBirthDate ge",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=ge2013-11-25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "ge2013-11-25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetWithFilterByBirthDate le",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=le2013-11-25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "le2013-11-25"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetWithFilterByBirthDate sa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=sa2013-01-16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "sa2013-01-16"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetWithFilterByBirthDate eb",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=eb2013-01-16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "eb2013-01-16"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetWithFilterByBirthDate ap",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8002/api/Patient?birthDate=ap2013-01-16",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8002",
+							"path": [
+								"api",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "birthDate",
+									"value": "ap2013-01-16"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8002/api/Patient"
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8002/api/Patient/5249c2e7-7127-4340-f08c-08dc3610cba7"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8002/api/Patient/62e513ed-f8a1-470e-b0c8-08dc35ff943d"
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": {\r\n    \"use\": \"official\",\r\n    \"family\": \"Иванов\",\r\n    \"given\": [\r\n      \"Иван\",\r\n      \"Иванович\"\r\n    ]\r\n  },\r\n  \"gender\": \"male\",\r\n  \"birthDate\": \"2024-02-25T12:19:18.095Z\",\r\n  \"active\": \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8002/api/Patient"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": {\r\n    \"id\": \"068b311e-eac9-4fb2-8d1f-08dc36171a03\",\r\n    \"use\": \"official\",\r\n    \"family\": \"Петрова\",\r\n    \"given\": [\r\n      \"Петра\",\r\n      \"Петровна\"\r\n    ]\r\n  },\r\n  \"gender\": \"female\",\r\n  \"birthDate\": \"1985-10-11T12:19:18.095Z\",\r\n  \"active\": \"false\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8002/api/Patient"
+			},
+			"response": []
+		}
+	]
+}
